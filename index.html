@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Metronome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="metronome-container">
+        <div class="metronome-panel">
+            <div class="header">
+                <h1>TAP METRONOME</h1>
+                <div class="brand">STUDIO</div>
+            </div>
+            
+            <div class="main-controls">
+                <div class="beat-indicator">
+                    <div class="beat-light" id="beatLight"></div>
+                    <div class="beat-label">BEAT</div>
+                </div>
+                
+                <div class="bpm-display">
+                    <div class="bpm-value" id="bpmValue">120</div>
+                    <div class="bpm-label">BPM</div>
+                </div>
+                
+                <div class="tempo-controls">
+                    <button class="tempo-btn" id="tempoDown">-</button>
+                    <button class="tempo-btn" id="tempoUp">+</button>
+                </div>
+            </div>
+            
+            <div class="control-buttons">
+                <button class="control-btn tap-btn" id="tapBtn">TAP TEMPO</button>
+                <button class="control-btn play-btn" id="playBtn">PLAY</button>
+                <button class="control-btn stop-btn" id="stopBtn">STOP</button>
+            </div>
+            
+            <div class="volume-section">
+                <label for="volumeSlider">VOLUME</label>
+                <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="70">
+                <div class="volume-indicators">
+                    <div class="volume-light" id="vol1"></div>
+                    <div class="volume-light" id="vol2"></div>
+                    <div class="volume-light" id="vol3"></div>
+                    <div class="volume-light" id="vol4"></div>
+                    <div class="volume-light" id="vol5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
